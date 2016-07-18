@@ -24,21 +24,20 @@ public class Day1 {
 		// // System.out.println(money);
 
 		// ================================================== Challenge 0 ===========================================================================
-
-		// //create variable for temp of water.
-		// //Print out wehter it is solid liquid or gas
-		// //using celcius
-		// int temp = 34;
-		// if (temp < 0) {
-		// System.out.println("Solid");
-		// } else if (temp > 100) {
-		// System.out.println("Gas");
-		// } else {
-		// System.out.println("Liquid");
-		// }
-		// //System.out.println(temp < 0 ? "Solid" : temp > 100 ? "Gas" :
-		// "Liquid");
-
+/*
+		 //create variable for temp of water.
+		 //Print out wehter it is solid liquid or gas
+		 //using celcius
+		 int temp = 34;
+		 if (temp < 0) {
+		 System.out.println("Solid");
+		 } else if (temp > 100) {
+		 System.out.println("Gas");
+		 } else {
+		 System.out.println("Liquid");
+		 }
+		 //System.out.println(temp < 0 ? "Solid" : temp > 100 ? "Gas" :"Liquid");
+*/
 		// ================================================== Challenge 1 ===========================================================================
 		/* same as # 0 but with grades
 		 int grade = 68;
@@ -126,10 +125,14 @@ public class Day1 {
 			collatz(i);
 		}
 		*/
-		// ========================================== Lesson: Arrays ====================================================================
+		for (int i = 1; i <= 100; i ++) {
+			if (isPrime(i)) {
+				System.out.println(i);
+			}
+		}
 	}
 	/*
-	 * Method for the methos lesson
+	 * Methods for the methods lesson
 	public static void collatz(int start) {
 		System.out.println("number:" + start);
 		while (start != 1) {
@@ -142,5 +145,33 @@ public class Day1 {
 			System.out.println(start);
 		}
 	}
+	
+	
+	//returns int
+	// two methods same name. Decided based on input
+	public static int max(int a,int b) {
+		if (a > b) {
+			return a;
+		} else {
+			return b;
+		}
+		
+		//return a > b ? a : b;
+	}
+	public static int max(int a,int b, int c) {
+		return max(max(a, b), c);
+	}
 	*/
+	public static boolean isPrime(int value) {
+		if (value < 2) {
+			return false;
+		}
+		for (int i = 2; i < value; i ++) {
+			if (value % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
 }
