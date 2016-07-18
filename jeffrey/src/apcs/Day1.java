@@ -81,23 +81,66 @@ public class Day1 {
 		//FIZZ BUZZ
 		//if % 3 say Fizz
 		//if % 5 say buzz
+		/*
 		int stop = 100;
 		
-		for (int i = 1;i < stop; i ++) {
-			if (i % 3 == 0 && i % 5 != 0) {
-				System.out.println("Fizz");
-			}
+		for (int i = 1;i <= stop; i ++) {
 			if (i % 5 == 0 && i % 3 == 0) {
 				System.out.println("FizzBuzz");
-			}
-			if (i % 5 == 0 && i % 3 != 0 ) {
+			} else if (i % 3 == 0 && i % 5 != 0) {
+				System.out.println("Fizz");
+			} else if (i % 5 == 0 && i % 3 != 0 ) {
 				System.out.println("Buzz");
-			}
-			if (i % 3 != 0 && i % 5 != 0) {
+			} else if (i % 3 != 0 && i % 5 != 0) {
 				System.out.println(i);
 			}
 		}
+		*/
+		// ==================================== Challenge 3 ==============================================================
+		//Coolatz Conjecture
+		//if number is even, divide by 2
+		//if number is odd. mutiply by 3 and add 1
+		//repeat
+		//theory is you will always reach 1
+		/*
+		long start = 999999999;
+		System.out.println("number:" + start);
+		while (start != 1) {
+			
+			if (start % 2 == 0) {
+				start = start / 2;
+			} else {
+				start = (start * 3) + 1;
+			}
+			System.out.println(start);
+		}
+		*/
+		// ========================================== Lesson: Methods =============================================================
 		
+		//public means that you can use the method in other classes
+		//static means it can be accessed directly rather than through an instance
+		//void means it returns nothing. void is the output of the method main
+		//for the method see end of public static void main bracket
+		/*
+		for (int i = 1; i <= 100; i ++) {
+			collatz(i);
+		}
+		*/
+		// ========================================== Lesson: Arrays ====================================================================
 	}
-
+	/*
+	 * Method for the methos lesson
+	public static void collatz(int start) {
+		System.out.println("number:" + start);
+		while (start != 1) {
+			
+			if (start % 2 == 0) {
+				start = start / 2;
+			} else {
+				start = (start * 3) + 1;
+			}
+			System.out.println(start);
+		}
+	}
+	*/
 }
