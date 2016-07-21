@@ -65,6 +65,13 @@ public class Aquarium {
 			a.move();
 			a.draw();
 		}
+		/* 
+		 * Differences between extendible class and interface
+		 * when to use an interface
+		 * interface is like a guideline, doesn't have method body, just defined name;
+		 * write out methods.
+		 * 
+		 */
 		
 		
 	}
