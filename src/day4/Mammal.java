@@ -1,7 +1,7 @@
-/* Shark.java | Copyright (c) 2016 Jeffrey Meng | Apache license 2.0 (http://www.apache.org/licenses/LICENSE-2.0) | https://github.com/jeffreymeng/apcs/*/
+/* Mammal.java | Copyright (c) 2016 Jeffrey Meng | Apache license 2.0 (http://www.apache.org/licenses/LICENSE-2.0) | https://github.com/jeffreymeng/apcs/*/
 /**
- * Shark.java
- * Shark.java Created by Jeffrey Meng on Jul 19, 2016 at 8:49:39 PM
+ * Mammal.java
+ * Mammal.java Created by Jeffrey Meng on Jul 19, 2016 at 8:49:39 PM
  * Licensed under the Apache license version 2.0. 
  * 
  * Copyright 2016 Jeffrey Meng
@@ -20,15 +20,18 @@
  */
 package day4;
 
-import apcs.Window;
+public class Mammal implements Animal {
 
-public class Shark extends Fish {
-	public void draw(){
-		Window.out.color("grey");
-		Window.out.circle(x, y, radius);
-	}
-	
-	public void eat() {
+	@Override
+	public void move() {
+		
 		
 	}
+
+	@Override
+	public void draw() {
+		
+		
+	}
+
 }

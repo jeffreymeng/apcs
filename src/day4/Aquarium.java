@@ -27,8 +27,12 @@ import apcs.Window;
 public class Aquarium {
 
 	public static void main(String[] args) {
+		/*
 		ArrayList<Fish> list = new ArrayList<Fish>();
 		for (int i = 0; i < 10; i ++) {
+			list.add(new Shark());
+		}
+		for (int i = 0; i < 5; i ++) {
 			list.add(new TigerShark());
 		}
 		//Fish fish = new Fish(250, 250);
@@ -41,6 +45,25 @@ public class Aquarium {
 			}
 			
 			Window.frame();
+		}
+		*/
+		
+		
+		
+		ArrayList<Animal> list = new ArrayList<Animal>();
+		Animal shark = new Shark();
+		list.add(shark);
+		
+		//Fish shark = new Shark();
+		//INTERFACE name = new CLASS()
+		//INTERFACE defined what methods you can use
+		//CLASS defines how to use those methods.
+		//if class CLASS had a eat() method,
+		//we would not be able to use it since
+		//interface INTERFACE does not have a eat() method
+		for (Animal a : list) {
+			a.move();
+			a.draw();
 		}
 		
 		

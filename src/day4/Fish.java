@@ -22,11 +22,12 @@ package day4;
 
 import apcs.Window;
 
-public class Fish {
+public class Fish implements Animal{
 	int x;
 	int y;
 	int radius;
-	
+	//static int fishCount = 134;
+	//static method dosen't change for each fish
 	public Fish(int xI, int yI) {
 		x = xI;
 		y = yI;
@@ -49,5 +50,10 @@ public class Fish {
 		Window.out.color("green");
 		Window.out.circle(x, y, radius);
 		
+	}
+
+	@Override
+	public void move() {
+		swim();
 	}
 }
