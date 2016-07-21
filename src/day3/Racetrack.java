@@ -1,8 +1,8 @@
-/* challenge0.java | Copyright (c) 2016 Jeffrey Meng | Apache license 2.0 | https://github.com/jeffreymeng/apcs/*/
+/* Racetrack.java | Copyright (c) 2016 Jeffrey Meng | Apache license 2.0 (http://www.apache.org/licenses/LICENSE-2.0) | https://github.com/jeffreymeng/apcs/*/
 /**
- * challenge0.java
- * challenge0.java Created by Jeffrey Meng on Jul 19, 2016 at 8:49:39 PM
- * Licensed under the apache license version 2.0. 
+ * Racetrack.java
+ * Racetrack.java Created by Jeffrey Meng on Jul 19, 2016 at 8:49:39 PM
+ * Licensed under the Apache license version 2.0. 
  * 
  * Copyright 2016 Jeffrey Meng
  * 
@@ -18,24 +18,27 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package day2;
-import jeffutils.arr;
+package day3;
 
-public class challenge0 {
+import apcs.Window;
+
+public class Racetrack {
+
 	public static void main(String[] args) {
-		int[] array = new int[10];
-		for (int i = 0;i < array.length; i ++) {
-			array[i] = i;
+		Window.out.background("white");
+		Car car = new Car();
+		System.out.println(car.size);
+		System.out.println(car.color);
+		System.out.println(car.driving);
+		System.out.println(car.mpg);
+		while (car.x < 500) {
+			car.draw();
+			car.drive();
+			Window.frame();
 		}
-		arr.printArr(array);
+		
+		
 		
 	}
-	
-	
-	
 
-	
-	
-
-	
 }
