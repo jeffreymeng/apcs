@@ -51,7 +51,7 @@ public class RecursionIntro {
 			
 			return;
 		}
-		else if (nuberm % 2 == 0) {
+		else if (number % 2 == 0) {
 			number/=2;
 			recursiveCC(number);
 		}
