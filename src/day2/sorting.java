@@ -22,8 +22,8 @@ package day2;
 
 
 import apcs.Window;
-import jeffutils.arr;
-import jeffutils.sort;
+import jeffutils.Arr;
+import jeffutils.Sort;
 
 public class sorting {
 	public static void main(String[] args) {
@@ -34,12 +34,12 @@ public class sorting {
 		Window.size(500, 500);
 		Window.frame();
 		Window.setFrameRate(10000);
-		int[] array = arr.randomArray(9, 0, 255);
-		sort.draw(array);
+		int[] array = Arr.randomArray(9, 0, 255);
+		Sort.draw(array);
 		long startTime = System.nanoTime();
-		long drawTime = sort.selection(array, true);
+		long drawTime = Sort.selection(array, true);
 		long endTime = System.nanoTime();
-		sort.draw(array);
+		Sort.draw(array);
 		long duration = (endTime - startTime) - drawTime;
 
 		System.out.println("done in " + duration +  " nanoseconds");

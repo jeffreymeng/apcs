@@ -22,7 +22,7 @@ package jeffutils;
 
 import apcs.Window;
 
-public class arr {
+public class Arr {
 	/**
 	 * prints each element in a array starting from start and ending in end in a new line in the console
 	 * @param array - the array which contains the elements to print

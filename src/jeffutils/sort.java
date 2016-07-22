@@ -20,16 +20,16 @@
  */
 package jeffutils;
 import apcs.Window;
-import jeffutils.arr;
+import jeffutils.Arr;
 
-public class sort {
+public class Sort {
 	public static long selection(int[] array, boolean draw) {
 		
 		long drawTime = 0;
 		
 		for (int i = 0; i < array.length; i ++) {
-			int smallestIndex = arr.smallestIndex(array, i);
-			arr.swap(array, i, smallestIndex);
+			int smallestIndex = Arr.smallestIndex(array, i);
+			Arr.swap(array, i, smallestIndex);
 			if (draw) {
 				//add the draw time to the drawTime variable
 				long startTime = System.nanoTime();
@@ -52,7 +52,7 @@ public class sort {
 			swapped = false;
 			for (int i = 0; i < array.length - 1 - sortCount; i ++) {
 				if (array[i] > array[i + 1]) {
-					arr.swap(array, i, i + 1);
+					Arr.swap(array, i, i + 1);
 					swapped = true;
 				}
 				

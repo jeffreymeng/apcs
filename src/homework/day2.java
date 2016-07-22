@@ -23,14 +23,14 @@ import java.util.regex.Matcher;
 
 import java.util.regex.Pattern;
 
-import jeffutils.str;
-import jeffutils.arr;
+import jeffutils.Str;
+import jeffutils.Arr;
 
 public class day2 {
 	public static void main(String[] args) {
-		System.out.println("Is Alphabetical:" + str.isAlphabetical(str.Alphabet));
-		System.out.println("Is Alphabetical:" + str.isAlphabetical("aabbcck"));
-		System.out.println("Is Alphabetical:" + str.isAlphabetical("aabbckc"));
+		System.out.println("Is Alphabetical:" + Str.isAlphabetical(Str.Alphabet));
+		System.out.println("Is Alphabetical:" + Str.isAlphabetical("aabbcck"));
+		System.out.println("Is Alphabetical:" + Str.isAlphabetical("aabbckc"));
 		System.out.println("Is Palendrome:" + isPalendrome("Hello"));
 		System.out.println("Is Palendrome:" + isPalendrome("racecar"));
 		System.out.println("Is Palendrome:" + isPalendrome("Degas, are we not drawn onward, we freer few, drawn onward to new eras aged?"));
@@ -42,12 +42,12 @@ public class day2 {
 		System.out.println("Candy Distribute:" + candyDistribute(6));
 	}
 	public static boolean isPalendrome(String word) {
-		return (word.toLowerCase().replaceAll("[^a-z]", "").equals(str.part(word.toLowerCase().replaceAll("[^a-z]", ""), word.toLowerCase().replaceAll("[^a-z]", "").length() - 1, 0)));
+		return (word.toLowerCase().replaceAll("[^a-z]", "").equals(Str.part(word.toLowerCase().replaceAll("[^a-z]", ""), word.toLowerCase().replaceAll("[^a-z]", "").length() - 1, 0)));
 	}
 	public static boolean isSecure(String password) {
 		Pattern p = Pattern.compile("[!#$@]");
 		Matcher m = p.matcher(password);
-		Pattern p2 = Pattern.compile(str.AlphabetCaps);
+		Pattern p2 = Pattern.compile(Str.AlphabetCaps);
 		Matcher m2 = p2.matcher(password);
 		return (password.length() >= 8) && m.find() && m2.find();
 	}
@@ -58,7 +58,7 @@ public class day2 {
 		    intArr[i] = number % 10;
 		    number = number / 10;
 		}
-		return arr.sum(intArr);
+		return Arr.sum(intArr);
 		
 	}
 	public static int candyDistribute(int candy) {

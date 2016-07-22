@@ -19,7 +19,7 @@
  *    limitations under the License.
  */
 package day2;
-import jeffutils.arr;
+import jeffutils.Arr;
 
 public class challenge0 {
 	public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class challenge0 {
 		for (int i = 0;i < array.length; i ++) {
 			array[i] = i;
 		}
-		arr.printArr(array);
+		Arr.printArr(array);
 		
 	}
 	

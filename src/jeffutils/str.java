@@ -21,7 +21,7 @@
 package jeffutils;
 
 
-public class str {
+public class Str {
 	public static String SpecialCharacters = "~`(!)@-#_$+%=^{[&}]*\\|/'\"?.,<>";
 	public static String Numbers = "0123456789";
 	public static String Alphabet = "abcdefghijklmnopqrstuvwxyz";
