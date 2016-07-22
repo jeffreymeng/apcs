@@ -70,7 +70,8 @@ public class Aquarium {
 		 * when to use an interface
 		 * interface is like a guideline, doesn't have method body, just defined name;
 		 * write out methods.
-		 * 
+		 *
+		 *
 		 */
 		
 		
